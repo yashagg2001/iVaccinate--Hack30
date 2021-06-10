@@ -1,0 +1,15 @@
+.background{
+    background: url("../img/bg.jpg");
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+    padding-top: 20px;
+}
+.res{
+    align-items: center;   
+    
+    }
