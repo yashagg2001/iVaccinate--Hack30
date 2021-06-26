@@ -9,7 +9,8 @@
 <b>3. Start the xampp server (Apache and sql):</b>`using xampp control panel`<br>
 <b>4. Navigate to phpmyadmin:</b>  `localhost\phpmyadmin`<br>
 <b>5. Create database `signup`</b><br>
-<b>6. Load the given `signup.sql` dump file into the `signup` database</b><br>
+<b>6. Load the given `signup.sql` dump file into the `signup` database :</b><br>
+&nbsp;&nbsp;&nbsp;(i) open cmd &nbsp;(ii) `cd C:\xampp\mysql\bin` &nbsp; (iii) `mysql -u root signup < "C:\xampp\htdocs\iVaccinate--Hack30\signup.sql"`<br>
 <b>7. Navigate to `localhost\iVaccinate--Hack30`</b><br>
 <b>8. Now click 'Sign Up' and register for it</b><br>
 <b>9. Now login with the same credentials to know your COVID risk score and vaccination priority.</b><br>
