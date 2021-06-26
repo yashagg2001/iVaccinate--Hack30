@@ -41,7 +41,15 @@
 					<label for="age" class="label">Age</label>
 					<input id="age" type="text" class="input" name="age" pattern="[0-99]{2}" required>
 				</div>
+				<div class="group">
+					<label for="gender" class="label">Gender</label>
+					<input id="MALE" type="radio" class="input" name="gender" value="male" required>
+					<label for="MALE">Male</label>
+					<input id="FEMALE" type="radio" class="input" name="gender" value="female" required>
+					<label for="FEMALE">Female</label>
+				</div>
 				<br>
+
 				<label>Diseases:</label><br>
 				<div class="newspaper">
       				<span style="white-space: nowrap;"><input type="checkbox" id="hypertension" value="6" name="disease[]"><label class="light" for="hypertension">Hypertension</label></span><br>

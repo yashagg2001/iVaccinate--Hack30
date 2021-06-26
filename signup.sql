@@ -33,6 +33,7 @@ CREATE TABLE `signupdata` (
   `user_email` varchar(255) NOT NULL,
   `user_password` varchar(255) NOT NULL,
   `phone` text NOT NULL,
+  `gender` varchar(255) NOT NULL,
   `age` int(255) NOT NULL,
   `disease` int(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

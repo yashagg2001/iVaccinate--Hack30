@@ -16,6 +16,7 @@ $user_name = $_POST['user_name'];
 $user_email = $_POST['user_email'];
 $user_password = $_POST['user_password'];
 $phone = $_POST['phone'];
+$gender= $_POST['gender'];
 $y=10;
 $age= $_POST['age'];
 $age_score = floor($_POST['age']/$y);
@@ -33,7 +34,7 @@ else{
     for($i=0; $i<$N;$i++)
     {   $score+=$disease[$i];}
 
-        $qy= " INSERT INTO signupdata(user_name, user_email, user_password, phone, age, disease) values ('$user_name','$user_email','$user_password','$phone','$age','$score') ";
+        $qy= " INSERT INTO signupdata(user_name, user_email, user_password, phone, gender, age, disease) values ('$user_name','$user_email','$user_password','$phone','$gender','$age','$score') ";
         mysqli_query($con,$qy);
         $qy3="SELECT * FROM `signupdata` ORDER BY disease DESC,dt_time ASC";
         mysqli_query($con,$qy3);

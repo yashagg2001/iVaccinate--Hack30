@@ -30,6 +30,7 @@ if($num ==1){
 	  { 
 	    $user_name = $row['user_name'];
         $sco= $row['disease'];
+        $gender= $row['gender'];
 	  }
      
       $count=1;
@@ -47,8 +48,10 @@ if($num ==1){
       }
 
     $_SESSION['user_name'] = $user_name;
+    $_SESSION['gender'] = $gender;
     $_SESSION['disease'] = $sco;
     $_SESSION['ivac']= $count;
+
     header('location:home.php');
 
 
