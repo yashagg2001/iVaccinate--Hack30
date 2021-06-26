@@ -10,7 +10,6 @@ if(!isset($_SESSION['ivac'])){
     header('location:login.php');
 }
 
-
 ?> 
 
 <!DOCTYPE html>
@@ -24,6 +23,7 @@ if(!isset($_SESSION['ivac'])){
 <body>
     <div class="background">
         <h1 class="res">RESULT <br><br>Welcome, <?php echo $_SESSION['user_name']; ?></h1>
+        <img src="https://joeschmoe.io/api/v1/<?php echo $_SESSION['user_name']; ?>" width="200" height="200">
             <h2>Considering your age and other health issues, your Risk Score is: <?php echo $_SESSION['disease']; ?> </h2>
             <h2>Your Priority Number of vaccination is: <?php echo $_SESSION['ivac']; ?> </h2>
             <h3>Note: Please keep signing-in at frequent intervals to check your updated Priority Number.<br></h3>  
